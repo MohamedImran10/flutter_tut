@@ -16,8 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from . import backend
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include(backend.urls)),
+    path('',include('backend.urls')),
 ]
